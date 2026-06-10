@@ -24,8 +24,16 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Work Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+.brand,
+.button {
+  font-family: "Outfit", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 a {
@@ -230,8 +238,7 @@ h3 {
 
 .project-card,
 .skill-panels article,
-.timeline-item,
-.involvement-list article {
+.timeline-item {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.7);
@@ -243,20 +250,43 @@ h3 {
   flex-direction: column;
   justify-content: space-between;
   padding: 24px;
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
 }
 
 .project-card p,
 .timeline-item li,
-.skill-panels p,
-.involvement-list p {
+.skill-panels p {
   color: var(--muted);
 }
 
 .card-top {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 8px;
   margin-bottom: 26px;
+}
+
+.project-icon {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  margin-right: 4px;
+  border: 1px solid rgba(38, 76, 103, 0.2);
+  border-radius: 8px;
+  background: rgba(38, 76, 103, 0.08);
+  color: var(--blue);
+}
+
+.project-icon svg {
+  width: 18px;
+  height: 18px;
 }
 
 .project-tag,
@@ -270,6 +300,26 @@ h3 {
 
 .project-tag {
   padding: 5px 8px;
+}
+
+.card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 22px;
+  color: var(--blue);
+  font-weight: 800;
+  font-size: 0.94rem;
+  transition: gap 160ms ease;
+}
+
+.card-link svg {
+  width: 16px;
+  height: 16px;
+}
+
+.card-link:hover {
+  gap: 10px;
 }
 
 .skill-panels {
@@ -319,16 +369,6 @@ h3 {
   gap: 8px;
   margin: 0;
   padding-left: 20px;
-}
-
-.involvement-list {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
-}
-
-.involvement-list article {
-  padding: 24px;
 }
 
 .contact {
@@ -384,6 +424,25 @@ h3 {
 
 .site-footer a {
   font-weight: 800;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 700ms ease, transform 700ms ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
 
 @media (max-width: 980px) {
