@@ -5,129 +5,174 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="Personal website for Pablo A. Rodriguez, a University of Michigan Cognitive Science graduate focused on computation, software development, machine learning, and leadership."
+      content="Pablo A. Rodriguez — University of Michigan graduate building software with C++, Python, and a focus on data structures, machine learning, and clear thinking."
     >
-    <title>Pablo A. Rodriguez</title>
+    <title>Pablo A. Rodriguez — Software &amp; Problem Solving</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300;400;500;600;700;800&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <div class="bg-grid" aria-hidden="true"></div>
+
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="Pablo A. Rodriguez home">
-        <span class="brand-mark">PR</span>
-        <span>Pablo A. Rodriguez</span>
+      <a class="brand" href="#top" aria-label="Pablo A. Rodriguez — home">
+        <span class="brand-mark" aria-hidden="true">PR</span>
+        <span class="brand-name">Pablo A. Rodriguez</span>
       </a>
-      <nav class="site-nav" aria-label="Primary navigation">
+      <nav class="site-nav" aria-label="Primary">
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
+        <a href="#contact" class="nav-cta">Contact</a>
       </nav>
     </header>
 
     <main id="top">
+      <!-- Hero -->
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">University of Michigan | Computation & Cognition</p>
-          <h1>Building thoughtful software at the intersection of cognition, data, and systems.</h1>
-          <p class="hero-text">
-            I am a University of Michigan Cognitive Science graduate focused on software development, machine learning,
-            and problem solving with a strong foundation in C++, Python, R, and data structures.
+          <p class="eyebrow reveal">University of Michigan &middot; Ann Arbor</p>
+          <h1 class="reveal">
+            Software built with
+            <span class="accent">systems thinking</span>
+            and people skills.
+          </h1>
+          <p class="hero-text reveal">
+            I'm Pablo — a University of Michigan graduate who likes turning messy, rule-heavy
+            problems into clear, efficient programs. C++ and Python are my home turf; leadership
+            and communication are what I bring to every team.
           </p>
-          <div class="hero-actions" aria-label="Contact and profile links">
-            <a class="button primary" href="mailto:Prodr@umich.edu">Email me</a>
-            <a class="button secondary" href="https://github.com/p-rodr">GitHub</a>
-            <a class="button secondary" href="https://www.linkedin.com/in/pablo-rodriguez-6011b7386">LinkedIn</a>
+          <div class="hero-actions reveal" aria-label="Contact and profile links">
+            <a class="button primary" href="mailto:Prodr@umich.edu">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7L22 7"/></svg>
+              Email me
+            </a>
+            <a class="button ghost" href="https://github.com/p-rodr" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.26.72-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.05.77 2.12v3.15c0 .31.2.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+              GitHub
+            </a>
+            <a class="button ghost" href="https://www.linkedin.com/in/pablo-rodriguez-6011b7386" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05a3.74 3.74 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+              LinkedIn
+            </a>
           </div>
+          <dl class="hero-stats reveal" aria-label="Quick facts">
+            <div>
+              <dt>Degree</dt>
+              <dd>B.S., Michigan</dd>
+            </div>
+            <div>
+              <dt>Focus</dt>
+              <dd>C++ &middot; Python &middot; ML</dd>
+            </div>
+            <div>
+              <dt>Recognition</dt>
+              <dd>Official of the Year</dd>
+            </div>
+          </dl>
         </div>
-        <figure class="hero-visual" aria-label="Portrait of Pablo A. Rodriguez">
-          <img src="assets/pablo-hero.jpeg" alt="Portrait of Pablo A. Rodriguez outdoors.">
+        <figure class="hero-visual reveal">
+          <div class="portrait-frame">
+            <img src="assets/pablo-hero.jpeg" alt="Portrait of Pablo A. Rodriguez outdoors." width="520" height="640" loading="eager">
+          </div>
+          <figcaption class="mono">// Ann Arbor, MI</figcaption>
         </figure>
       </section>
 
-      <section class="section intro reveal" aria-labelledby="about-title">
-        <div class="section-heading">
-          <p class="section-label">About</p>
+      <!-- About -->
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="section-heading reveal">
+          <p class="section-label mono">01 — About</p>
           <h2 id="about-title">Software-minded, people-tested.</h2>
         </div>
-        <div class="intro-text">
-          <p>
-            My work blends technical coursework, systems-focused C++ projects, and hands-on
-            leadership experience. I enjoy turning complex rules and constraints into programs
-            that are clear, efficient, and reliable.
+        <div class="about-grid">
+          <p class="reveal">
+            My background blends technical coursework at Michigan — data structures, algorithms,
+            machine learning, and statistics — with systems-focused C++ projects that reward
+            careful design over quick hacks.
           </p>
-          <p>
-            Outside the classroom, I have built communication and decision-making skills through
-            customer service, officiating competitive sports, and collaborative technical events
-            with Michigan Hackers.
+          <p class="reveal">
+            Years of customer-facing work and officiating competitive sports taught me the other
+            half of engineering: staying calm under pressure, communicating clearly, and making
+            fair calls fast. I've also collaborated on technical events with Michigan Hackers.
           </p>
         </div>
       </section>
 
-      <section class="section reveal" id="projects" aria-labelledby="projects-title">
-        <div class="section-heading">
-          <p class="section-label">Selected Projects</p>
+      <!-- Projects -->
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading reveal">
+          <p class="section-label mono">02 — Projects</p>
           <h2 id="projects-title">C++ projects with systems thinking.</h2>
         </div>
         <div class="project-grid">
           <article class="project-card reveal">
-            <div>
+            <div class="card-body">
               <div class="card-top">
                 <span class="project-icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="13" rx="2"/><path d="M2 10h20"/><path d="M6 14h2"/><path d="M11 14h7"/></svg>
                 </span>
-                <span class="project-tag">C++</span>
-                <span class="project-tag">STL</span>
+                <ul class="tag-list" aria-label="Technologies">
+                  <li>C++</li>
+                  <li>STL</li>
+                </ul>
               </div>
               <h3>Banking Transaction Simulator</h3>
               <p>
-                Developed a command-line banking system supporting multi-user transaction processing,
-                fraud checks, and time-based queries using STL maps and priority queues.
+                Command-line banking system that processes deposits, withdrawals, fraud checks,
+                and time-based queries for many users at once — built on STL maps and priority
+                queues for speed.
               </p>
             </div>
-            <a class="card-link" href="https://github.com/p-rodr/bank.project" target="_blank" rel="noopener">
+            <a class="card-link" href="https://github.com/p-rodr/bank.project" target="_blank" rel="noopener" aria-label="View Banking Transaction Simulator code on GitHub">
               View code
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
             </a>
           </article>
+
           <article class="project-card reveal">
-            <div>
+            <div class="card-body">
               <div class="card-top">
                 <span class="project-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.1 4.9L19 9.2l-4 3.6 1.2 5.2L12 15.4 7.8 18l1.2-5.2-4-3.6 4.9-1.3Z"/></svg>
                 </span>
-                <span class="project-tag">C++</span>
-                <span class="project-tag">Priority Queues</span>
+                <ul class="tag-list" aria-label="Technologies">
+                  <li>C++</li>
+                  <li>Pairing Heaps</li>
+                </ul>
               </div>
               <h3>Galactic Warfare Simulation</h3>
               <p>
-                Designed a large-scale battle simulation using pairing heaps and priority queues for
-                efficient event scheduling and combat resolution.
+                Simulation engine that resolves large-scale battles using custom pairing heaps
+                and priority queues for efficient event scheduling and combat resolution.
               </p>
             </div>
-            <a class="card-link" href="https://github.com/p-rodr/a-new-heap.project" target="_blank" rel="noopener">
+            <a class="card-link" href="https://github.com/p-rodr/a-new-heap.project" target="_blank" rel="noopener" aria-label="View Galactic Warfare Simulation code on GitHub">
               View code
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
             </a>
           </article>
+
           <article class="project-card reveal">
-            <div>
+            <div class="card-body">
               <div class="card-top">
                 <span class="project-icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M8.2 7.3 11 16M15.8 7.3 13 16M8.5 6h7"/></svg>
                 </span>
-                <span class="project-tag">C++</span>
-                <span class="project-tag">Graph Search</span>
+                <ul class="tag-list" aria-label="Technologies">
+                  <li>C++</li>
+                  <li>BFS / DFS</li>
+                </ul>
               </div>
               <h3>Pathfinding Algorithm</h3>
               <p>
-                Implemented BFS and DFS graph traversal with backtracking to solve a multi-state 2D
-                puzzle involving colored doors, switches, and dynamic map states.
+                BFS and DFS graph traversal with backtracking to solve multi-state 2D puzzles of
+                colored doors, buttons, and shifting map states.
               </p>
             </div>
-            <a class="card-link" href="https://github.com/p-rodr/puzzle.project" target="_blank" rel="noopener">
+            <a class="card-link" href="https://github.com/p-rodr/puzzle.project" target="_blank" rel="noopener" aria-label="View Pathfinding Algorithm code on GitHub">
               View code
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
             </a>
@@ -135,83 +180,103 @@
         </div>
       </section>
 
-      <section class="section split reveal" id="skills" aria-labelledby="skills-title">
-        <div class="section-heading">
-          <p class="section-label">Skills</p>
-          <h2 id="skills-title">Technical toolkit and coursework.</h2>
+      <!-- Skills -->
+      <section class="section" id="skills" aria-labelledby="skills-title">
+        <div class="section-heading reveal">
+          <p class="section-label mono">03 — Skills</p>
+          <h2 id="skills-title">The toolkit.</h2>
         </div>
         <div class="skill-panels">
-          <article>
-            <h3>Languages</h3>
+          <article class="panel reveal">
+            <h3 class="mono">Languages</h3>
             <ul class="pill-list">
               <li>C++</li>
               <li>Python</li>
               <li>R</li>
             </ul>
           </article>
-          <article>
-            <h3>Tools</h3>
+          <article class="panel reveal">
+            <h3 class="mono">Tools</h3>
             <ul class="pill-list">
               <li>Git</li>
-              <li>Google Colab</li>
               <li>PyTorch</li>
+              <li>Google Colab</li>
               <li>RStudio</li>
               <li>Visual Studio</li>
               <li>Xcode</li>
+              <li>OpenTable</li>
             </ul>
           </article>
-          <article>
-            <h3>Concepts</h3>
+          <article class="panel reveal">
+            <h3 class="mono">Concepts</h3>
             <ul class="pill-list">
-              <li>Data Structures & Algorithms</li>
+              <li>Data Structures &amp; Algorithms</li>
               <li>Object-Oriented Programming</li>
               <li>Machine Learning</li>
               <li>NLP</li>
               <li>Statistics</li>
             </ul>
           </article>
-          <article>
-            <h3>Relevant Coursework</h3>
-            <p>
-              Data Structures & Algorithms, Programming & Data Structures, Discrete Math, Machine
-              Learning for NLP, Data Computing, Cognitive Psychology, Artificial Intelligence,
-              and Statistics.
-            </p>
+          <article class="panel reveal">
+            <h3 class="mono">People</h3>
+            <ul class="pill-list">
+              <li>Leadership</li>
+              <li>Communication</li>
+              <li>Conflict Resolution</li>
+              <li>Customer Service</li>
+              <li>Fine Dining Experience</li>
+            </ul>
           </article>
         </div>
+        <p class="coursework reveal">
+          <span class="mono">Coursework:</span> Data Structures &amp; Algorithms, Programming &amp; Data
+          Structures, Discrete Math, Machine Learning for NLP, Data Computing, Cognitive Psychology,
+          Artificial Intelligence, Statistics.
+        </p>
       </section>
 
-      <section class="section reveal" id="experience" aria-labelledby="experience-title">
-        <div class="section-heading">
-          <p class="section-label">Experience</p>
+      <!-- Experience -->
+      <section class="section" id="experience" aria-labelledby="experience-title">
+        <div class="section-heading reveal">
+          <p class="section-label mono">04 — Experience</p>
           <h2 id="experience-title">Leadership in fast-moving environments.</h2>
         </div>
         <div class="timeline">
-          <article class="timeline-item">
-            <div>
-              <h3>Intramural Referee &bull; Flag Football & Basketball</h3>
-              <p class="meta">University of Michigan Rec Sports &bull; Ann Arbor, MI &bull; 2023-2026</p>
+          <article class="timeline-item reveal">
+            <div class="timeline-head">
+              <h3>Intramural Referee — Flag Football &amp; Basketball</h3>
+              <p class="meta mono">University of Michigan Rec Sports &middot; Ann Arbor, MI &middot; 2023 – 2026</p>
             </div>
             <ul>
               <li>Officiated competitive games while ensuring rule compliance and player safety.</li>
               <li>Resolved on-field conflicts quickly with clear communication under pressure.</li>
-              <li>Awarded Flag Football Official of the Year for leadership and professionalism.</li>
+              <li>Named <strong>Flag Football Official of the Year</strong> for leadership and professionalism.</li>
             </ul>
           </article>
-          <article class="timeline-item">
-            <div>
+          <article class="timeline-item reveal">
+            <div class="timeline-head">
               <h3>Waiter</h3>
-              <p class="meta">Red Robin &bull; North Riverside, IL &bull; May 2022-May 2024</p>
+              <p class="meta mono">Red Robin &middot; North Riverside, IL &middot; 2022 – 2024</p>
             </div>
             <ul>
-              <li>Delivered high-quality customer service in a fast-paced, high-volume environment.</li>
-              <li>Trained and supported new staff to improve operational efficiency and service quality.</li>
+              <li>Delivered high-quality service in a fast-paced, high-volume environment.</li>
+              <li>Trained and supported new staff to improve efficiency and service quality.</li>
             </ul>
           </article>
-          <article class="timeline-item">
-            <div>
-              <h3>Michigan Hackers Club</h3>
-              <p class="meta">University of Michigan &bull; Ann Arbor, MI</p>
+          <article class="timeline-item reveal">
+            <div class="timeline-head">
+              <h3>Server</h3>
+              <p class="meta mono">T.G.I. Fridays &middot; 2021 – 2022</p>
+            </div>
+            <ul>
+              <li>Managed multiple tables at once while keeping orders accurate and guests happy.</li>
+              <li>Built the people skills and composure that carry into every team I work with.</li>
+            </ul>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-head">
+              <h3>Michigan Hackers</h3>
+              <p class="meta mono">University of Michigan &middot; Ann Arbor, MI</p>
             </div>
             <ul>
               <li>Active member collaborating on technical and software development events.</li>
@@ -220,24 +285,45 @@
         </div>
       </section>
 
-      <section class="contact reveal" id="contact" aria-labelledby="contact-title">
-        <p class="section-label">Contact</p>
-        <h2 id="contact-title">Let's connect.</h2>
-        <p>
-          I am interested in software development, machine learning, and technical opportunities
-          where clear thinking and strong teamwork matter.
-        </p>
-        <div class="contact-links">
-          <a href="mailto:Prodr@umich.edu">Prodr@umich.edu</a>
-          <a href="https://github.com/p-rodr">github.com/p-rodr</a>
-          <a href="https://www.linkedin.com/in/pablo-rodriguez-6011b7386">LinkedIn</a>
+      <!-- Education -->
+      <section class="section" id="education" aria-labelledby="education-title">
+        <div class="section-heading reveal">
+          <p class="section-label mono">05 — Education</p>
+          <h2 id="education-title">University of Michigan</h2>
+        </div>
+        <div class="education-card reveal">
+          <div class="block-m" aria-hidden="true">M</div>
+          <div>
+            <h3>B.S. — University of Michigan, Ann Arbor</h3>
+            <p>
+              Cognitive Science with a computation focus — coursework spanning data structures,
+              algorithms, machine learning, artificial intelligence, and statistics.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact" id="contact" aria-labelledby="contact-title">
+        <div class="contact-inner reveal">
+          <p class="section-label mono">06 — Contact</p>
+          <h2 id="contact-title">Let's build something.</h2>
+          <p>
+            I'm looking for software development and machine learning opportunities where clear
+            thinking and strong teamwork matter. If that sounds like your team, say hello.
+          </p>
+          <div class="contact-links">
+            <a class="button primary" href="mailto:Prodr@umich.edu">Prodr@umich.edu</a>
+            <a class="button ghost" href="https://github.com/p-rodr" target="_blank" rel="noopener">github.com/p-rodr</a>
+            <a class="button ghost" href="https://www.linkedin.com/in/pablo-rodriguez-6011b7386" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>&copy; <span id="year"></span> Pablo A. Rodriguez</p>
-      <a href="#top">Back to top</a>
+      <p class="mono">&copy; <span id="year"></span> Pablo A. Rodriguez &middot; Ann Arbor, MI</p>
+      <a href="#top">Back to top &uarr;</a>
     </footer>
 
     <script src="script.js"></script>
